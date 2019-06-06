@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    margin-top: 0;
+    height: 100vh;
+    background-image:url(bricks.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+brand-logo{
+    color: black;
+}
+
+
+/*.header{
+    margin-top: 0;
+    height: 100vh;
+    background-image:url(bricks.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+} */
+
+.item{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+}
+
+.brand-logo{
+    font-weight: 500;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.text-wrap{
+    position: absolute;
+    top:   40%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.heading-primary{
+    font-family: 'Montserrat';
+    margin-top: 0;
+    color: black;
+    text-transform: uppercase;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 100px;
+    font-weight: 800px;
+    letter-spacing: 50px;
+    animation: moveInLeft;
+    animation-duration: 2.6s;
+}
+
+.heading-primary-sub{
+    margin-top: 40px;
+    display: block;
+    font-size: 60px;
+    font-weight: 800px;
+    letter-spacing: 10px;
+    animation: moveInRight;
+    animation-duration: 2.6s;
+}
+
+.about{
+    display: none;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-heading{
+    margin-top: 0;
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+.about-text{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
